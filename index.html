@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPT Puskesmas Carita - Carita Wisata Sehat | Kabupaten Pandeglang</title>
+  <meta name="description" content="Website Resmi UPT Puskesmas Carita Kabupaten Pandeglang. Memberikan pelayanan kesehatan yang ramah, cepat, dan profesional dengan motto Carita Wisata Sehat.">
+  <meta name="keywords" content="Puskesmas Carita, UPT Puskesmas Carita, Pandeglang, Carita Wisata Sehat, Jadwal Dokter, Pelayanan Kesehatan Carita, KAJEDAK">
+  <meta name="author" content="UPT Puskesmas Carita">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="UPT Puskesmas Carita - Carita Wisata Sehat">
+  <meta property="og:description" content="Website Resmi UPT Puskesmas Carita Kabupaten Pandeglang - Carita Wisata Sehat">
+  <meta property="og:image" content="assets/img/hero-puskesmas.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Topbar Emergency & Contacts -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <a href="tel:081288997722" class="topbar-emergency">
+          <i class="fas fa-phone-volume"></i> UGD 24 Jam: 0812-8899-7722
+        </a>
+        <span><i class="far fa-clock"></i> Senin - Sabtu: 08.00 - 14.00 WIB</span>
+        <span><i class="fas fa-map-marker-alt"></i> Carita, Kab. Pandeglang</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:pkmcarita@pandeglangkab.go.id"><i class="far fa-envelope"></i> pkmcarita@pandeglangkab.go.id</a>
+        <a href="https://wa.me/6281288997722" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> WhatsApp Info
+        </a>
+        <a href="admin/login.php" style="opacity: 0.8;" title="Portal Petugas"><i class="fas fa-lock"></i> Pegawai</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar Header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="index.html" class="nav-brand" title="UPT Puskesmas Carita">
+          <img src="assets/img/logo.svg" alt="Logo UPT Puskesmas Carita">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu" id="mainNavMenu">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">
+              <i class="fas fa-home"></i> Beranda
+            </a>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a href="#profil" class="nav-link">
+              <i class="fas fa-clinic-medical"></i> Profil <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#profil" class="dropdown-item">Tentang Puskesmas</a>
+              <a href="#profil" class="dropdown-item">Visi & Misi</a>
+              <a href="#sambutan" class="dropdown-item">Sambutan Kepala</a>
+              <a href="#profil" class="dropdown-item">Wilayah Kerja 10 Desa</a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#pelayanan" class="nav-link">
+              <i class="fas fa-stethoscope"></i> Pelayanan <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#pelayanan" class="dropdown-item">Daftar Jenis Pelayanan</a>
+              <a href="#jadwal" class="dropdown-item">Jadwal Pelayanan Terpadu</a>
+              <a href="#pelayanan" class="dropdown-item">Pelayanan Rawat Jalan</a>
+              <a href="#pelayanan" class="dropdown-item">Persalinan 24 Jam (PONED)</a>
+              <a href="#pelayanan" class="dropdown-item">Unit Gawat Darurat (UGD)</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#program" class="nav-link">
+              <i class="fas fa-heartbeat"></i> Program
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#inovasi" class="nav-link">
+              <i class="fas fa-lightbulb"></i> Inovasi KAJEDAK
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#berita" class="nav-link">
+              <i class="far fa-newspaper"></i> Berita
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#edukasi" class="nav-link">
+              <i class="fas fa-book-medical"></i> Edukasi
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#galeri" class="nav-link">
+              <i class="far fa-images"></i> Galeri
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#kontak" class="nav-link">
+              <i class="fas fa-envelope-open-text"></i> Kontak
+            </a>
+          </li>
+        </ul>
+
+        <!-- Action CTA & Mobile Button -->
+        <div class="nav-actions">
+          <a href="https://wa.me/6281288997722?text=Halo%20Admin%20Puskesmas%20Carita%2C%20saya%20ingin%20mendaftar%20pelayanan%20kesehatan" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.875rem;">
+            <i class="fas fa-calendar-check"></i> Daftar Pelayanan
+          </a>
+
+          <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-wrapper">
+      <img src="assets/img/hero-puskesmas.jpg" alt="UPT Puskesmas Carita Pandeglang" class="hero-bg-img">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-motto-badge">
+          <i class="fas fa-heartbeat"></i> Motto: “Carita Wisata Sehat”
+        </div>
+        <h1 class="hero-title">
+          Selamat Datang di UPT Puskesmas Carita<br>
+          <span>Kabupaten Pandeglang</span>
+        </h1>
+        <p class="hero-subtitle">
+          Memberikan pelayanan kesehatan yang mudah, cepat, ramah, dan berkualitas bagi masyarakat Carita dan sekitarnya.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#pelayanan" class="btn btn-primary">
+            <i class="fas fa-stethoscope"></i> Lihat Pelayanan
+          </a>
+          <a href="#profil" class="btn btn-outline-white">
+            <i class="fas fa-info-circle"></i> Tentang Kami
+          </a>
+          <a href="https://wa.me/6281288997722?text=Halo%20Admin%20Puskesmas%20Carita" target="_blank" rel="noopener" class="btn btn-outline-white" style="border-color: #34d399; color: #34d399;">
+            <i class="fab fa-whatsapp"></i> Chat WhatsApp
+          </a>
+        </div>
+
+        <!-- Quick Floating Stats on Hero -->
+        <div class="hero-stats-banner">
+          <div class="hero-stat-item">
+            <i class="fas fa-user-md"></i>
+            <div>
+              <h4>42+</h4>
+              <p>Tenaga Medis</p>
+            </div>
+          </div>
+          <div class="hero-stat-item">
+            <i class="fas fa-clinic-medical"></i>
+            <div>
+              <h4>18</h4>
+              <p>Poli & Layanan</p>
+            </div>
+          </div>
+          <div class="hero-stat-item">
+            <i class="fas fa-map-marked-alt"></i>
+            <div>
+              <h4>10</h4>
+              <p>Desa Wilayah Kerja</p>
+            </div>
+          </div>
+          <div class="hero-stat-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4 style="color: #f87171;">24 Jam</h4>
+              <p>UGD & PONED Siaga</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       QUICK ACCESS
+       ========================================================================== -->
+  <section class="quick-access-section">
+    <div class="container">
+      <div class="quick-grid">
+        <a href="#jadwal" class="quick-card">
+          <div class="quick-icon-wrap"><i class="fas fa-calendar-alt"></i></div>
+          <h3>Jadwal Pelayanan</h3>
+          <p>Jadwal poli rawat jalan & jam buka</p>
+        </a>
+
+        <a href="https://wa.me/6281288997722?text=Halo%20Puskesmas%20Carita%2C%20saya%20ingin%20mendaftar%20pelayanan%20kesehatan" target="_blank" rel="noopener" class="quick-card">
+          <div class="quick-icon-wrap"><i class="fas fa-id-card"></i></div>
+          <h3>Pendaftaran</h3>
+          <p>Booking antrean via WhatsApp</p>
+        </a>
+
+        <a href="#edukasi" class="quick-card">
+          <div class="quick-icon-wrap"><i class="fas fa-heartbeat"></i></div>
+          <h3>Cek Kesehatan</h3>
+          <p>Skrining PTM & cek berkala</p>
+        </a>
+
+        <a href="#pelayanan" class="quick-card">
+          <div class="quick-icon-wrap"><i class="fas fa-pills"></i></div>
+          <h3>Informasi Obat</h3>
+          <p>Layanan farmasi & resep obat</p>
+        </a>
+
+        <a href="#pengaduan" class="quick-card">
+          <div class="quick-icon-wrap"><i class="fas fa-comments"></i></div>
+          <h3>Pengaduan</h3>
+          <p>Kanal aspirasi & masukan warga</p>
+        </a>
+
+        <a href="#kontak" class="quick-card">
+          <div class="quick-icon-wrap"><i class="fas fa-file-alt"></i></div>
+          <h3>Informasi Publik</h3>
+          <p>Maklumat, SOP & SKM Puskesmas</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROFIL PUSKESMAS
+       ========================================================================== -->
+  <section class="section section-alt" id="profil">
+    <div class="container">
+      <div class="profile-grid">
+        <div class="profile-visual">
+          <img src="assets/img/hero-puskesmas.jpg" alt="Gedung UPT Puskesmas Carita" class="profile-img-main">
+          <div class="profile-badge-float">
+            <i class="fas fa-award"></i>
+            <div>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.1rem; color: #064e3b;">Pelayanan Terakreditasi</h4>
+              <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0;">Mutu Layanan Primer Paripurna</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-content">
+          <span class="badge-pill badge-mint" style="margin-bottom: 1rem;">
+            <i class="fas fa-hospital-alt"></i> Profil Fasilitas Kesehatan
+          </span>
+          <h2>Tentang UPT Puskesmas Carita</h2>
+          <p>
+            UPT Puskesmas Carita merupakan fasilitas pelayanan kesehatan tingkat pertama (FKTP) yang berada di bawah naungan Dinas Kesehatan Kabupaten Pandeglang, Provinsi Banten. Kami melayani masyarakat di 10 desa wilayah kerja Kecamatan Carita serta menjadi rujukan pertama layanan kesehatan wisata di kawasan pesisir Selat Sunda.
+          </p>
+          <p>
+            Dengan visi mewujudkan <strong>“Carita Wisata Sehat”</strong>, kami mengedepankan pelayanan promotif dan preventif tanpa mengesampingkan pengobatan kuratif dan rehabilitatif, menjamin keselamatan pasien, serta mendukung kawasan wisata Carita yang bersih, aman, dan sehat bagi semua.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-num">42</div>
+              <div class="stat-label">Tenaga Medis Profesional</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">18</div>
+              <div class="stat-label">Jenis Pelayanan & Poli Medis</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">14</div>
+              <div class="stat-label">Program Kesehatan Unggulan</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">10</div>
+              <div class="stat-label">Desa Wilayah Kerja Binaan</div>
+            </div>
+          </div>
+
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-md); padding: 1rem; margin-top: 1rem;">
+            <h4 style="font-size: 0.95rem; color: #064e3b; margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: #059669;"></i> 10 Desa Wilayah Kerja:</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Carita</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Sukarame</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Banjarmasin</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Pejamben</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Cinoyong</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Sindang Laut</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Sukanagara</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Tembong</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Kawoyang</span>
+              <span class="badge-pill badge-mint" style="font-size: 0.75rem;">Desa Sukajadi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SAMBUTAN KEPALA PUSKESMAS
+       ========================================================================== -->
+  <section class="section" id="sambutan" style="background: #f1f5f9;">
+    <div class="container">
+      <div class="speech-card">
+        <div class="speech-grid">
+          <div class="speech-photo-col">
+            <img src="assets/img/kepala-puskesmas.jpg" alt="Foto Kepala Puskesmas" class="speech-photo">
+          </div>
+          <div class="speech-body">
+            <i class="fas fa-quote-right speech-quote-icon"></i>
+            <span class="speech-badge"><i class="fas fa-user-tie"></i> Sambutan Pemimpin</span>
+            <h3>Sambutan Kepala UPT Puskesmas Carita</h3>
+            <div class="speech-text">
+              Puji dan syukur kita panjatkan ke hadirat Allah SWT atas rahmat dan karunia-Nya, website resmi UPT Puskesmas Carita dapat hadir sebagai wujud transparansi, keterbukaan informasi, dan kemudahan akses layanan kesehatan bagi seluruh masyarakat Kecamatan Carita dan para wisatawan yang berkunjung ke kawasan pesisir Carita, Kabupaten Pandeglang.<br><br>
+              Sesuai dengan motto kami “Carita Wisata Sehat”, kami berkomitmen untuk terus meningkatkan mutu pelayanan kesehatan primer yang ramah, cepat, tepat, dan berorientasi pada keselamatan pasien serta pencegahan penyakit promotif dan preventif. Melalui portal ini, masyarakat dapat dengan mudah memperoleh informasi mengenai jadwal dokter, jenis layanan medis, program unggulan ILP, inovasi KAJEDAK, serta kanal pengaduan langsung.<br><br>
+              Mari bersama-sama kita wujudkan masyarakat Carita yang sehat, mandiri, dan berdaya saing.
+            </div>
+            <div class="speech-author">
+              <h4>Mahmudi, S.Kep., Ners</h4>
+              <p>Kepala UPT Puskesmas Carita - Kabupaten Pandeglang</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INFORMASI PELAYANAN
+       ========================================================================== -->
+  <section class="section section-alt" id="pelayanan">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pelayanan Medis</span>
+        <h2 class="section-title">Pelayanan UPT Puskesmas Carita</h2>
+        <p class="section-desc">Pilihan layanan kesehatan komprehensif, berkualitas, dan didukung oleh dokter serta tenaga medis berpengalaman.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-stethoscope"></i></div>
+          <span class="badge-pill badge-mint" style="align-self: flex-start; margin-bottom: 0.75rem; font-size: 0.75rem;">Rawat Jalan</span>
+          <h3>Pemeriksaan Umum</h3>
+          <p>Melayani pemeriksaan klinis awal, diagnosa, dan penanganan penyakit umum oleh dokter umum dan perawat berpengalaman.</p>
+          <div class="service-meta">
+            <span><i class="far fa-clock" style="color: #059669;"></i> Senin - Sabtu (08.00 - 13.30 WIB)</span>
+            <span><i class="fas fa-map-marker-alt" style="color: #059669;"></i> Ruang Poli Umum</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-tooth"></i></div>
+          <span class="badge-pill badge-mint" style="align-self: flex-start; margin-bottom: 0.75rem; font-size: 0.75rem;">Rawat Jalan</span>
+          <h3>Kesehatan Gigi & Mulut</h3>
+          <p>Pemeriksaan kesehatan gigi, penambalan, pencabutan gigi sulung/tetap, pembersihan karang gigi, dan edukasi mulut.</p>
+          <div class="service-meta">
+            <span><i class="far fa-clock" style="color: #059669;"></i> Senin - Kamis (08.00 - 13.00 WIB)</span>
+            <span><i class="fas fa-map-marker-alt" style="color: #059669;"></i> Ruang Poli Gigi</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-female"></i></div>
+          <span class="badge-pill badge-mint" style="align-self: flex-start; margin-bottom: 0.75rem; font-size: 0.75rem;">Kesehatan Ibu & Anak</span>
+          <h3>Kesehatan Ibu & Anak (KIA)</h3>
+          <p>Pemeriksaan kehamilan (ANC terpadu), USG dasar oleh dokter, nifas, deteksi dini risiko kehamilan, dan bayi.</p>
+          <div class="service-meta">
+            <span><i class="far fa-clock" style="color: #059669;"></i> Senin - Sabtu (08.00 - 13.30 WIB)</span>
+            <span><i class="fas fa-map-marker-alt" style="color: #059669;"></i> Ruang KIA / Kebidanan</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-syringe"></i></div>
+          <span class="badge-pill badge-mint" style="align-self: flex-start; margin-bottom: 0.75rem; font-size: 0.75rem;">Pencegahan Penyakit</span>
+          <h3>Pelayanan Imunisasi</h3>
+          <p>Vaksinasi dasar lengkap bagi bayi dan balita (BCG, Polio, DPT-HB-Hib, Campak/MR, PCV, Rotavirus).</p>
+          <div class="service-meta">
+            <span><i class="far fa-clock" style="color: #059669;"></i> Rabu & Jumat (08.30 - 12.00 WIB)</span>
+            <span><i class="fas fa-map-marker-alt" style="color: #059669;"></i> Ruang Imunisasi</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-vial"></i></div>
+          <span class="badge-pill badge-mint" style="align-self: flex-start; margin-bottom: 0.75rem; font-size: 0.75rem;">Penunjang Medis</span>
+          <h3>Pelayanan Laboratorium</h3>
+          <p>Pemeriksaan hematologi, gula darah, kolesterol, asam urat, golongan darah, tes kehamilan, malaria, TCM TB, dan tes urine.</p>
+          <div class="service-meta">
+            <span><i class="far fa-clock" style="color: #059669;"></i> Senin - Sabtu (08.00 - 13.00 WIB)</span>
+            <span><i class="fas fa-map-marker-alt" style="color: #059669;"></i> Instalasi Laboratorium</span>
+          </div>
+        </div>
+
+        <div class="service-card" style="border: 2px solid #ef4444;">
+          <div class="service-icon-box" style="background: #fee2e2; color: #dc2626;"><i class="fas fa-ambulance"></i></div>
+          <span class="badge-pill badge-urgent" style="align-self: flex-start; margin-bottom: 0.75rem; font-size: 0.75rem;">Gawat Darurat 24 Jam</span>
+          <h3>Unit Gawat Darurat (UGD) & PONED</h3>
+          <p>Layanan darurat medis 24 jam nonstop untuk kecelakaan, trauma akut, kegawatdaruratan, dan persalinan siaga.</p>
+          <div class="service-meta">
+            <span><i class="far fa-clock" style="color: #dc2626;"></i> 24 Jam Nonstop Setiap Hari</span>
+            <span><i class="fas fa-map-marker-alt" style="color: #dc2626;"></i> Gedung UGD & Ruang Bersalin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       JADWAL PELAYANAN
+       ========================================================================== -->
+  <section class="section" id="jadwal" style="background: #f8fafc;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Jadwal Operasional</span>
+        <h2 class="section-title">Jadwal Pelayanan Terpadu</h2>
+        <p class="section-desc">Ketahui jam operasional loket dan poli untuk mempermudah kunjungan Anda ke UPT Puskesmas Carita.</p>
+      </div>
+
+      <div class="table-filter-bar">
+        <div class="filter-controls">
+          <div class="search-input-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="scheduleSearch" placeholder="Cari nama poli, hari, atau unit..." autocomplete="off">
+          </div>
+
+          <select id="scheduleDayFilter" class="filter-select">
+            <option value="all">Semua Hari Pelayanan</option>
+            <option value="senin">Senin</option>
+            <option value="selasa">Selasa</option>
+            <option value="rabu">Rabu</option>
+            <option value="kamis">Kamis</option>
+            <option value="jumat">Jumat</option>
+            <option value="sabtu">Sabtu</option>
+            <option value="setiap hari">Minggu / 24 Jam</option>
+          </select>
+        </div>
+        <div style="font-size: 0.85rem; color: #64748b;">
+          <i class="fas fa-check-circle" style="color: #059669;"></i> Data Terverifikasi Dinas Kesehatan
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Jenis Pelayanan / Poli</th>
+              <th>Hari Pelayanan</th>
+              <th>Jam Buka</th>
+              <th>Loket / Unit Ruang</th>
+              <th>Keterangan / Persyaratan</th>
+            </tr>
+          </thead>
+          <tbody id="scheduleTableBody">
+            <tr class="schedule-row" data-service="Pemeriksaan Umum" data-day="Senin - Kamis" data-room="Poli Umum">
+              <td style="font-weight: 700; color: #064e3b;"><i class="fas fa-stethoscope" style="color: #059669; margin-right: 8px;"></i> Pemeriksaan Umum</td>
+              <td><span class="badge-pill badge-mint">Senin - Kamis</span></td>
+              <td><span class="time-badge">08.00 - 13.30 WIB</span></td>
+              <td>Poli Umum</td>
+              <td style="color: #64748b; font-size: 0.85rem;">Pendaftaran buka mulai 07.45 WIB</td>
+            </tr>
+            <tr class="schedule-row" data-service="Pemeriksaan Gigi" data-day="Senin - Kamis" data-room="Poli Gigi">
+              <td style="font-weight: 700; color: #064e3b;"><i class="fas fa-tooth" style="color: #059669; margin-right: 8px;"></i> Pemeriksaan Gigi & Mulut</td>
+              <td><span class="badge-pill badge-mint">Senin - Kamis</span></td>
+              <td><span class="time-badge">08.00 - 13.00 WIB</span></td>
+              <td>Poli Gigi</td>
+              <td style="color: #64748b; font-size: 0.85rem;">Maksimal 20 kuota antrean tindakan</td>
+            </tr>
+            <tr class="schedule-row" data-service="KIA & Ibu Hamil" data-day="Senin - Sabtu" data-room="Ruang KIA">
+              <td style="font-weight: 700; color: #064e3b;"><i class="fas fa-female" style="color: #059669; margin-right: 8px;"></i> Kesehatan Ibu & Anak (KIA)</td>
+              <td><span class="badge-pill badge-mint">Senin - Sabtu</span></td>
+              <td><span class="time-badge">08.00 - 13.00 WIB</span></td>
+              <td>Ruang KIA</td>
+              <td style="color: #64748b; font-size: 0.85rem;">USG dasar terjadwal setiap Rabu</td>
+            </tr>
+            <tr class="schedule-row" data-service="Imunisasi Balita" data-day="Rabu" data-room="Poli Imunisasi">
+              <td style="font-weight: 700; color: #064e3b;"><i class="fas fa-syringe" style="color: #059669; margin-right: 8px;"></i> Imunisasi Bayi & Balita</td>
+              <td><span class="badge-pill badge-mint">Rabu</span></td>
+              <td><span class="time-badge">08.30 - 11.30 WIB</span></td>
+              <td>Poli Imunisasi</td>
+              <td style="color: #64748b; font-size: 0.85rem;">Membawa buku KIA / KMS balita</td>
+            </tr>
+            <tr class="schedule-row" data-service="UGD 24 Jam" data-day="Setiap Hari" data-room="Ruang UGD">
+              <td style="font-weight: 700; color: #dc2626;"><i class="fas fa-ambulance" style="color: #dc2626; margin-right: 8px;"></i> Unit Gawat Darurat (UGD) & PONED</td>
+              <td><span class="badge-pill badge-urgent">Setiap Hari</span></td>
+              <td><span class="time-badge time-24">00.00 - 24.00 WIB</span></td>
+              <td>Ruang UGD Depan</td>
+              <td style="color: #64748b; font-size: 0.85rem;">Layanan darurat 24 Jam Nonstop</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-disclaimer">
+        <i class="fas fa-info-circle" style="color: #0284c7;"></i>
+        <span><strong>Catatan:</strong> Jam pelayanan dapat berubah sesuai kebijakan, situasi darurat, dan kondisi pelayanan. Untuk kondisi darurat, UGD & Bersalin (PONED) melayani 24 Jam Nonstop.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROGRAM KESEHATAN (ILP)
+       ========================================================================== -->
+  <section class="section section-alt" id="program">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Program Unggulan</span>
+        <h2 class="section-title">Program Kesehatan & Transformasi ILP</h2>
+        <p class="section-desc">Upaya Kesehatan Masyarakat (UKM) terpadu berbasis siklus hidup untuk meningkatkan derajat kesehatan warga Carita.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" style="border-top: 4px solid var(--pkm-primary);">
+          <span class="badge-pill badge-blue" style="font-size: 0.75rem; margin-bottom: 0.75rem;">Transformasi Layanan</span>
+          <h3>Integrasi Layanan Primer (ILP)</h3>
+          <p>Penerapan klaster siklus hidup dari ibu hamil, balita, remaja, usia produktif hingga lansia dengan penguatan jejaring Pustu dan Posyandu di 10 desa.</p>
+        </div>
+
+        <div class="service-card" style="border-top: 4px solid var(--pkm-primary);">
+          <span class="badge-pill badge-blue" style="font-size: 0.75rem; margin-bottom: 0.75rem;">Kesehatan Ibu & Anak</span>
+          <h3>Gerakan Cegah Stunting (GENTING)</h3>
+          <p>Aksi terpadu pemantauan berat dan tinggi balita, pemberian makanan tambahan (PMT) lokal berbasis gizi ikan Carita, serta pendampingan bumil KEK.</p>
+        </div>
+
+        <div class="service-card" style="border-top: 4px solid var(--pkm-primary);">
+          <span class="badge-pill badge-blue" style="font-size: 0.75rem; margin-bottom: 0.75rem;">Promkes & Wisata</span>
+          <h3>Promosi Kesehatan & PHBS Wisata</h3>
+          <p>Penyuluhan Perilaku Hidup Bersih dan Sehat (PHBS) di tatanan rumah tangga, sekolah, dan sentra wisata kuliner pesisir pantai Carita.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INOVASI PUSKESMAS: KAJEDAK
+       ========================================================================== -->
+  <section class="section" id="inovasi" style="background: linear-gradient(180deg, #ecfdf5 0%, #f8fafc 100%);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Karya Inovasi Daerah</span>
+        <h2 class="section-title">Inovasi Unggulan UPT Puskesmas Carita</h2>
+        <p class="section-desc">Terobosan layanan proaktif untuk menjawab tantangan kesehatan masyarakat pesisir dan pariwisata.</p>
+      </div>
+
+      <div class="featured-innovation">
+        <div class="innovation-spotlight-grid">
+          <img src="assets/img/inovasi-kajedak.jpg" alt="Inovasi KAJEDAK Puskesmas Carita" class="innovation-spotlight-img">
+          
+          <div class="innovation-spotlight-body">
+            <span class="badge-pill badge-urgent" style="background: #dcfce7; color: #047857; border-color: #86efac; margin-bottom: 0.75rem;">
+              <i class="fas fa-crown"></i> Inovasi Unggulan Daerah
+            </span>
+            <h3>KAJEDAK (Kampung Jaga Edukasi dan Deteksi Aksi Kesehatan)</h3>
+            <div class="innovation-tagline">Inovasi Jemput Bola Pelayanan Kesehatan Terpadu Masyarakat Pesisir & Desa Carita</div>
+            <p style="color: #475569; font-size: 0.95rem; line-height: 1.65;">
+              KAJEDAK mengintegrasikan layanan skrining penyakit tidak menular (tensi, gula darah, kolesterol), pemeriksaan ibu hamil, posyandu balita, dan edukasi sanitasi langsung ke kantong-kantong permukiman nelayan dan pelaku wisata pantai Carita.
+            </p>
+
+            <div class="innovation-keypoints">
+              <div class="keypoint-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Tujuan:</strong> Mendekatkan akses deteksi dini dan edukasi kesehatan bagi warga yang tinggal jauh dari fasilitas utama.</div>
+              </div>
+              <div class="keypoint-item">
+                <i class="fas fa-shield-alt"></i>
+                <div><strong>Manfaat:</strong> Skrining kesehatan gratis rutin, pencegahan komplikasi kronis, dan mendukung citra Carita sebagai destinasi wisata sehat.</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <a href="https://wa.me/6281288997722?text=Halo%20Admin%20Puskesmas%20Carita%2C%20saya%20ingin%20tanya%20jadwal%20KAJEDAK" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> Jadwal KAJEDAK di Desa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BERITA DAN KEGIATAN
+       ========================================================================== -->
+  <section class="section section-alt" id="berita">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Warta Puskesmas</span>
+        <h2 class="section-title">Berita & Kegiatan Terkini</h2>
+        <p class="section-desc">Publikasi aktivitas, program lapangan, dan pengumuman resmi UPT Puskesmas Carita.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-thumb-wrap">
+            <img src="assets/img/inovasi-kajedak.jpg" alt="KAJEDAK di Sukarame" class="news-thumb">
+            <span class="badge-pill badge-mint news-cat-badge">Kegiatan</span>
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span><i class="far fa-calendar-alt"></i> 28 September 2026</span>
+              <span><i class="far fa-user"></i> Humas Carita</span>
+            </div>
+            <h3>Pelaksanaan Inovasi KAJEDAK di Desa Sukarame Tingkatkan Skrining Kesehatan Nelayan</h3>
+            <p>Kegiatan inovasi KAJEDAK menyasar puluhan masyarakat nelayan dan pelaku wisata di Desa Sukarame untuk skrining tensi, gula darah, dan kolesterol gratis.</p>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-thumb-wrap">
+            <img src="assets/img/hero-puskesmas.jpg" alt="Kesiapsiagaan Pos Kesehatan" class="news-thumb">
+            <span class="badge-pill badge-mint news-cat-badge">Pelayanan</span>
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span><i class="far fa-calendar-alt"></i> 20 September 2026</span>
+              <span><i class="far fa-user"></i> Tim Medis</span>
+            </div>
+            <h3>UPT Puskesmas Carita Tingkatkan Kesiapsiagaan Pos Medis Wisata Jelang Akhir Pekan</h3>
+            <p>Puskesmas Carita menyiagakan pos layanan kesehatan darurat dan armada ambulans 24 jam untuk melayani lonjakan wisatawan di pesisir pantai.</p>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-thumb-wrap">
+            <img src="assets/img/hero-puskesmas.jpg" alt="Sosialisasi ILP" class="news-thumb">
+            <span class="badge-pill badge-mint news-cat-badge">Program</span>
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span><i class="far fa-calendar-alt"></i> 12 September 2026</span>
+              <span><i class="far fa-user"></i> Humas Carita</span>
+            </div>
+            <h3>Sosialisasi Integrasi Layanan Primer (ILP) Bersama Kader Posyandu Se-Kecamatan Carita</h3>
+            <p>Penyelarasan pemahaman kader posyandu dari 10 desa binaan dalam mendukung implementasi tata kelola klaster kesehatan siklus hidup terpadu.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDUKASI KESEHATAN
+       ========================================================================== -->
+  <section class="section" id="edukasi" style="background: #f8fafc;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pojok Sehat</span>
+        <h2 class="section-title">Edukasi Kesehatan Masyarakat</h2>
+        <p class="section-desc">Artikel ilmiah populer dan tips kesehatan praktis untuk mewujudkan keluarga sehat dan bebas penyakit.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card" style="border-top: 4px solid #0284c7;">
+          <div class="news-body">
+            <span class="badge-pill badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.75rem;">Stunting</span>
+            <h3>1000 Hari Pertama Kehidupan: Kunci Emas Cegah Stunting</h3>
+            <p>Periode sejak pembuahan dalam kandungan hingga usia 2 tahun adalah fase terpenting pertumbuhan otak anak. Pastikan gizi ibu hamil tercukupi dan ASI eksklusif 6 bulan.</p>
+          </div>
+        </article>
+
+        <article class="news-card" style="border-top: 4px solid #0284c7;">
+          <div class="news-body">
+            <span class="badge-pill badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.75rem;">DBD</span>
+            <h3>Waspada Demam Berdarah Dengue: Terapkan Gerakan 3M Plus</h3>
+            <p>Kuras bak penampungan air, tutup wadah air rapat-rapat, dan daur ulang barang bekas untuk memutus siklus perkembangbiakan jentik nyamuk Aedes aegypti.</p>
+          </div>
+        </article>
+
+        <article class="news-card" style="border-top: 4px solid #0284c7;">
+          <div class="news-body">
+            <span class="badge-pill badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.75rem;">Hipertensi</span>
+            <h3>Kendalikan Hipertensi dengan Pola Hidup CERDIK</h3>
+            <p>Cek kesehatan berkala, enyahkan asap rokok, rajin olahraga, diet sehat rendah garam berlebih, istirahat cukup, dan kelola stres dengan baik.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MULTIMEDIA & GALERI
+       ========================================================================== -->
+  <section class="section section-alt" id="galeri">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dokumentasi</span>
+        <h2 class="section-title">Galeri Foto Kegiatan</h2>
+        <p class="section-desc">Dokumentasi potret pelayanan medis, posyandu desa, dan aksi sosial tenaga kesehatan di wilayah Carita.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-img="assets/img/inovasi-kajedak.jpg" data-caption="Pelaksanaan Inovasi KAJEDAK di Wilayah Pesisir Carita">
+          <img src="assets/img/inovasi-kajedak.jpg" alt="Inovasi KAJEDAK" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Inovasi KAJEDAK di Pesisir</h4>
+            <span><i class="fas fa-tag"></i> Kegiatan Masyarakat</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="assets/img/hero-puskesmas.jpg" data-caption="Gedung Utama dan Armada Ambulans UPT Puskesmas Carita">
+          <img src="assets/img/hero-puskesmas.jpg" alt="Gedung Puskesmas Carita" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Gedung Utama Puskesmas Carita</h4>
+            <span><i class="fas fa-tag"></i> Sarana Prasarana</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="assets/img/kepala-puskesmas.jpg" data-caption="Kepala UPT Puskesmas Carita - Mahmudi, S.Kep., Ners">
+          <img src="assets/img/kepala-puskesmas.jpg" alt="Kepala Puskesmas" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Kepemimpinan & Mutu Pelayanan</h4>
+            <span><i class="fas fa-tag"></i> Internal Puskesmas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PENGADUAN MASYARAKAT
+       ========================================================================== -->
+  <section class="section" id="pengaduan" style="background: #f1f5f9;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Layanan Aspirasi</span>
+        <h2 class="section-title">Pengaduan & Saran Masyarakat</h2>
+        <p class="section-desc">Kritik, saran, dan aspirasi Anda sangat berharga bagi peningkatan mutu dan kualitas pelayanan kami.</p>
+      </div>
+
+      <div style="max-width: 820px; margin: 0 auto;">
+        <div class="complaint-box">
+          <form onsubmit="alert('Terima kasih! Pengaduan Anda telah terkirim ke sistem UPT Puskesmas Carita.'); return false;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+              <div class="form-group">
+                <label class="form-label">Nama Lengkap <span style="color: #ef4444;">*</span></label>
+                <input type="text" class="form-control" placeholder="Masukkan nama Anda" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Nomor HP / WhatsApp <span style="color: #ef4444;">*</span></label>
+                <input type="text" class="form-control" placeholder="Contoh: 081234567890" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+              <div class="form-group">
+                <label class="form-label">Alamat Email (Opsional)</label>
+                <input type="email" class="form-control" placeholder="nama@email.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Kategori Pengaduan</label>
+                <select class="form-control">
+                  <option>Pelayanan Medis & Dokter</option>
+                  <option>Sikap Petugas & Komunikasi</option>
+                  <option>Sarana, Fasilitas & Kebersihan</option>
+                  <option>Farmasi & Obat</option>
+                  <option>Administrasi & Loket</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Uraian Pengaduan / Masukan <span style="color: #ef4444;">*</span></label>
+              <textarea class="form-control" rows="4" placeholder="Jelaskan masukan atau saran perbaikan Anda..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="padding: 0.85rem 2rem;">
+              <i class="fas fa-paper-plane"></i> Kirim Pengaduan Sekarang
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       KONTAK & GOOGLE MAPS
+       ========================================================================== -->
+  <section class="section section-alt" id="kontak">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lokasi & Akses</span>
+        <h2 class="section-title">Kontak & Lokasi Puskesmas</h2>
+        <p class="section-desc">Kunjungi kami di jalur utama wisata pantai Carita atau hubungi kami untuk layanan medis dan rujukan darurat.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="badge-pill badge-mint" style="margin-bottom: 1rem;">
+            <i class="fas fa-building"></i> Fasilitas Pelayanan Kesehatan
+          </span>
+          <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem; color: #064e3b;">UPT Puskesmas Carita</h3>
+          <p style="color: #64748b;">Puskesmas Carita Kabupaten Pandeglang - Banten</p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-text">
+                <h4>Alamat Resmi</h4>
+                <p>Jl. Raya Labuan - Carita KM. 9, Desa Carita, Kecamatan Carita, Kabupaten Pandeglang, Banten 42264</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-text">
+                <h4>Telepon Kantor</h4>
+                <p>(0253) 802100</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" style="background: #fee2e2; color: #dc2626;"><i class="fas fa-ambulance"></i></div>
+              <div class="contact-text">
+                <h4>Hotline Darurat & UGD 24 Jam</h4>
+                <p style="color: #dc2626; font-weight: 700;">0812-8899-7722</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="far fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email Resmi</h4>
+                <p>pkmcarita@pandeglangkab.go.id</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.73359569722!2d105.8458!3d-6.3117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e423f03b2907fc9%3A0x7d6f51cb3229b12e!2sPuskesmas%20Carita!5e0!3m2!1sid!2sid!4v1700000000000" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Lokasi UPT Puskesmas Carita">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo.svg" alt="Logo Puskesmas Carita">
+          <p>Fasilitas Pelayanan Kesehatan Tingkat Pertama (FKTP) resmi di bawah Dinas Kesehatan Kabupaten Pandeglang, Provinsi Banten. Motto: <strong>“Carita Wisata Sehat”</strong>.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Menu Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+            <li><a href="#profil"><i class="fas fa-chevron-right"></i> Profil Puskesmas</a></li>
+            <li><a href="#pelayanan"><i class="fas fa-chevron-right"></i> Pelayanan Medis</a></li>
+            <li><a href="#jadwal"><i class="fas fa-chevron-right"></i> Jadwal Operasional</a></li>
+            <li><a href="#inovasi"><i class="fas fa-chevron-right"></i> Inovasi KAJEDAK</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Informasi & Edukasi</h4>
+          <ul class="footer-links">
+            <li><a href="#berita"><i class="fas fa-chevron-right"></i> Berita & Kegiatan</a></li>
+            <li><a href="#edukasi"><i class="fas fa-chevron-right"></i> Edukasi Kesehatan</a></li>
+            <li><a href="#galeri"><i class="fas fa-chevron-right"></i> Galeri Dokumentasi</a></li>
+            <li><a href="#pengaduan"><i class="fas fa-chevron-right"></i> Pengaduan Masyarakat</a></li>
+            <li><a href="#kontak"><i class="fas fa-chevron-right"></i> Lokasi & Peta</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Kontak & Lokasi</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt" style="color: #34d399;"></i> Jl. Raya Labuan - Carita KM. 9, Pandeglang</li>
+            <li><i class="fas fa-phone-alt" style="color: #34d399;"></i> (0253) 802100</li>
+            <li><i class="fas fa-ambulance" style="color: #f87171;"></i> UGD 24 Jam: 0812-8899-7722</li>
+          </ul>
+
+          <div class="footer-social-links">
+            <a href="https://instagram.com/puskesmas_carita" target="_blank" rel="noopener" class="social-icon-btn"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/puskesmascarita" target="_blank" rel="noopener" class="social-icon-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@puskesmascarita" target="_blank" rel="noopener" class="social-icon-btn"><i class="fab fa-youtube"></i></a>
+            <a href="https://tiktok.com/@puskesmascarita" target="_blank" rel="noopener" class="social-icon-btn"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/6281288997722" target="_blank" rel="noopener" class="social-icon-btn"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div>&copy; 2026 <strong>UPT Puskesmas Carita</strong> Kabupaten Pandeglang. Dilindungi Undang-Undang.</div>
+        <div>Dinas Kesehatan Kab. Pandeglang - Banten</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions (WhatsApp & Back to Top) -->
+  <div class="floating-actions">
+    <button class="float-top" id="backToTopBtn" aria-label="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
+    <a href="https://wa.me/6281288997722?text=Halo%20Admin%20UPT%20Puskesmas%20Carita" target="_blank" rel="noopener" class="float-wa" title="Hubungi Kami via WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Lightbox Modal Container -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Tutup"><i class="fas fa-times"></i></button>
+      <img src="" id="lightboxImg" alt="Preview Gambar">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Client-side Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
